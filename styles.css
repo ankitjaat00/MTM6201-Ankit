@@ -1,0 +1,329 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  position: relative; /* Make sure the header is positioned relatively */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/logo.jpg") center/cover no-repeat; /* Add gradient overlay and background image */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #0c0c0c;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for navigation */
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.intro {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out; /* Animation */
+}
+
+.intro p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Main styles */
+main {
+  padding: 20px;
+}
+/* Button styles */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.button:active {
+  transform: translateY(1px); /* Add slight downward movement on click */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/* Apply hover effect to links */
+a:hover {
+  color: #ff0000; /* Change text color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Apply hover effect to buttons */
+button:hover {
+  background-color: #ff0000; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+/* Apply hover effect to images */
+img:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Apply hover effect to divs */
+div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect on hover */
+}
+
+/* Additional styles */
+.product {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin between products */
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+/* About Us section styles */
+.about-us {
+  margin-top: 20px;
+}
+
+.about-us h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.about-us p {
+  margin-bottom: 10px;
+}
+
+.about-us ul {
+  margin-bottom: 20px;
+}
+
+.about-us ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+/* Testimonial Card styles */
+.testimonial-card {
+  display: inline-block; /* Display cards side by side */
+  width: calc(
+    28.33% - 10px
+  ); /* Adjust width to fit three cards in a row with margin */
+  margin-right: 20px; /* Add margin between cards */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-img img {
+  width: 100px; /* Adjust image width */
+  height: 100px; /* Adjust image height */
+  border-radius: 50%; /* Make the image round */
+  margin-bottom: 10px;
+}
+
+.testimonial-content p {
+  margin: 0;
+}
+
+/* Ensure sections appear one after another vertically */
+.testimonials {
+  display: block;
+  margin-bottom: 40px; /* Add margin between sections */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Ensure sections appear one after another vertically */
+.featured-products,
+.about-us,
+.testimonials {
+  display: block;
+  margin-bottom: 40px; /* Add margin between sections */
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.contact-form,
+.map {
+  width: calc(50% - 10px);
+}
+
+.contact-form {
+  margin-right: 10px;
+}
+.contact-form label,
+button {
+  display: block; /* Display labels as block-level elements */
+  margin-bottom: 5px; /* Add some space between labels and input fields */
+}
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+  margin-bottom: 10px; /* Add space between input fields */
+}
+
+/* Focus styles */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-top: 0;
+}
+.contact-form form {
+  animation: fadeInUp 0.5s ease-out; /* Apply animation */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below and fade in */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Fade in and move to original position */
+  }
+}
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-form,
+  .map {
+    width: calc(50% - 20px);
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form,
+  .map {
+    width: 100%;
+  }
+}
+
+/* Service section styles */
+.service {
+  background-color: #676363;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.service h2 {
+  color: #f8f5f5;
+}
+
+.service p {
+  margin-bottom: 10px;
+}
+
+.service ul {
+  margin-bottom: 10px;
+}
+
+.service ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
